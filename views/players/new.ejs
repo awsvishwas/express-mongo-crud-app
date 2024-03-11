@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Player Form</title>
+</head>
+<body>
+    <form action="/players" method="post">
+        <label for="name">Name: </label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="age">Age: </label>
+        <input type="number" id="age" name="age" required><br><br>
+
+        <label for="role">Role: </label>
+        <select id="role" name="category" required>
+            <option value="bat">Batsman</option>
+            <option value="bowl">Bowler</option>
+            <option value="all-rounder">All-Rounder</option>
+        </select><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+    <a href="/players">Go Back</a>
+</body>
+</html>
